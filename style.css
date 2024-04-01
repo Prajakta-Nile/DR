@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Upgraded font */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #00284e, #005792); /* Gradient background from dark blue to light */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff; /* White color for heading */
+}
+
+#image-input {
+    margin-bottom: 20px;
+}
+
+#result-container {
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#result-text {
+    margin-bottom: 20px;
+}
+
+/* Adding eyes animation */
+@keyframes eyes {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.eyes {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #e58b8b;
+    border-radius: 50%;
+    animation: eyes 3s infinite;
+}
+
+.left-eye {
+    top: 50%;
+    left: 40%;
+}
+
+.right-eye {
+    top: 50%;
+    right: 40%;
+}
